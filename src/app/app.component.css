@@ -1,0 +1,10 @@
+app-upper-bar {
+    position: relative;
+    z-index: 999;
+}
+
+#iframe {
+    width: 50%; 
+    height: calc(100vh - 60px);
+}
+

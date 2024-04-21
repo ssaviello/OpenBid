@@ -1,0 +1,10 @@
+#iframe-viewer {
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+
+#viktor {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}

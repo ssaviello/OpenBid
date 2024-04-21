@@ -1,0 +1,46 @@
+<div id="login-background">
+
+    <div id="login">
+
+        <div>
+            <img src="assets/images/cfLogin.jpg" alt="" id="login-image">
+        </div>
+    
+        <div id="login-form">
+    
+            <h1>User Login</h1>
+    
+            <div class="example-container">
+                <mat-form-field>
+                <mat-label>Enter your email</mat-label>
+                <input matInput
+                        placeholder="Your email"
+                        [formControl]="email"
+                        (blur)="updateErrorMessage()"
+                        required>
+                @if (email.invalid) {
+                    <mat-error>{{errorMessage}}</mat-error>
+                }
+                </mat-form-field>
+            </div>
+            
+            <div class="example-container">
+                <mat-form-field>
+                <mat-label>Enter Password</mat-label>
+                <input matInput
+                        placeholder="Your Password"
+                        (blur)="updateErrorMessage()"
+                        required>
+                @if (email.invalid) {
+                    <mat-error>{{errorMessage}}</mat-error>
+                }
+                </mat-form-field>
+            </div>
+        
+            <button class="cfButton"><a href="client">User Login</a></button>
+    
+        </div>
+    
+    </div>
+
+</div>
